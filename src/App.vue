@@ -1,32 +1,49 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+$error: #FF8484;
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+h3{
+  font-size: 20px;
+}
+h3{
+  font-size: 28px;
+}
+.newclass{
+  opacity: 1;
+  box-shadow: none !important;
+  img, h3, span{
+    animation: removing 2.1s ease-in-out forwards;
+  }
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+@keyframes removing {
+  0% {
+    display: block;
+    opacity: 1;
+    background: transparent;
+  }
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  1% {
+    display: block;
+    opacity: 1;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
   }
 }
 </style>
