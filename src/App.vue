@@ -6,7 +6,7 @@
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-$error: #FF8484;
+
 #app {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;

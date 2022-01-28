@@ -74,6 +74,7 @@ export default {
     }
     &:hover{
       box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.1), 0px 6px 10px rgba(44, 48, 70, 0.02);
+      cursor: url("../../assets/cursor.png"), pointer;
       .icon{
         visibility: visible;
       }
